@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  border-radius: 2px solid red;
+  background: #242424;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    
+
+}
+
+.navbar ul li{
+    padding: 0 20px;
+    list-style: none;
+
+}
+.navbar ul li a{
+    font-size: 15px;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.acc{
+    position: absolute;
+    font-weight: 700;
+    right:0px;
+    color:#fff
+}
+
+.container{
+    height: 100%;
+    background-color: #DCDCDC;
+    display: flex;
+
+}
+
+.left-container{
+    width: 50%;
+    position:relative;
+    background-color: #bd6e6e;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.left-container h2{
+    font-size: 30px;
+}
+.left-container h3{
+    line-height: 20px;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+    
+    position: relative;
+    left: 204px;
+
+
+} 
+
+.name-field{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.name-field label{
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    /* color: #ccc; */
+}
+.name-field input{
+    margin:0 10px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    
+    /* &:focus {border-color: #111;}; */
+}
+
+.lname-field,.email-field,.password-field,.cpassword-field{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.lname-field label,.email-field label,.password-field label,.cpassword-field label{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.lname-field input,.email-field input,.password-field input,.cpassword-field input{
+    margin:0 10px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    width: 100%;
+    border: 0;
+    background-color: #DCDCDC;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    
+    /* &:focus {border-color: #111;}; */
+}
+
+/*
+ .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 120px;
+
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+ */
+
+/* .btn:hover,
+.btn:focus {
+  background-color: #F082AC;
+  
+} */
+
+
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 120px;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
+.connectToMeta{
+    
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    width: 300px;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /* width: 100%; */
+    will-change: transform;
+    margin:10px 0px 0px 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:600px;
+    margin-top:200px;
+    
+
+}
+
+
+.connectToMeta:disabled {
+  pointer-events: none;
+}
+
+.connectToMeta:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.connectToMeta:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+.pagenotfound{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
